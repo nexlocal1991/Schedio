@@ -256,9 +256,12 @@ button:focus {
 
 .feature-img {
     width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: var(--radius-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+    display: block;
 }
 
 /* ============================================
@@ -385,6 +388,12 @@ button:focus {
 .form-note a {
     color: white;
     text-decoration: underline;
+}
+
+/* Tally Form Adjustments */
+.form-container iframe {
+    border-radius: var(--radius-sm);
+    min-height: 200px;
 }
 
 /* ============================================
@@ -628,12 +637,6 @@ button:focus {
     line-height: 1.7;
 }
 
-/* Tally Form Adjustments */
-.form-container iframe {
-    border-radius: var(--radius-sm);
-    min-height: 200px;
-}
-
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
@@ -669,6 +672,10 @@ button:focus {
     
     .features-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .feature-img {
+        max-width: 100%;
     }
     
     .waitlist-form {
